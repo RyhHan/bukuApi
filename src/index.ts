@@ -10,8 +10,8 @@ const app: Application = express();
 
 // Sertifikat SSL
 const options = {
-    key: fs.readFileSync('/path/to/cert/privkey.pem'),  // Ganti dengan path ke kunci privat
-    cert: fs.readFileSync('/path/to/cert/fullchain.pem')  // Ganti dengan path ke sertifikat
+    key: fs.readFileSync(path.join(__dirname, 'ssl', 'privkey_no_passphrase.pem')),  // Path ke kunci privat
+    cert: fs.readFileSync(path.join(__dirname, 'ssl', 'fullchain.pem'))  // Path ke sertifikat
 };
 
 app.use(express.json());
