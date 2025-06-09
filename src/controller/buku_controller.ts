@@ -18,6 +18,7 @@ const BukuController = {
         } catch (error : any) {
             return res.status(500).json({
                 status: 500,
+                error: error.message,
                 message: "Error fetching bukus",
             })
         }
@@ -124,6 +125,11 @@ const BukuController = {
             }
 
             await buku.destroy();
+
+            return res.status(200).json({
+                status: 200,
+                message: "Buku deleted successfully",
+            });
         } catch (error: any) {
             return res.status(500).json({
                 status: 500,

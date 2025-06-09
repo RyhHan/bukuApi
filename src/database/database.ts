@@ -3,7 +3,7 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
-const dbName = process.env.DBNAME || "default_db";
+const dbName = process.env.DBNAME || "buku";
 const dbUser = process.env.DBUSER || "default_user";
 const dbPassword = process.env.DBPASSWORD || "default_password";
 const database = new Sequelize(dbName, dbUser, dbPassword, {
