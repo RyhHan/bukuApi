@@ -7,7 +7,7 @@ const dbName = process.env.DBNAME || "default_db";
 const dbUser = process.env.DBUSER || "default_user";
 const dbPassword = process.env.DBPASSWORD || "default_password";
 const database = new Sequelize(dbName, dbUser, dbPassword, {
-    database: "mysql"
+    dialect: "mysql"
 })
 
 database.authenticate()
