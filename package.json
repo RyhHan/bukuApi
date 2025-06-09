@@ -1,13 +1,21 @@
 {
-  "name": "api'",
+  "name": "asdasdasdasd",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RyhHan/bukuApi.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RyhHan/bukuApi/issues"
+  },
+  "homepage": "https://github.com/RyhHan/bukuApi#readme",
   "description": "",
   "dependencies": {
     "dotenv": "^16.5.0",
@@ -22,9 +30,7 @@
     "@types/multer": "^1.4.13",
     "@types/node": "^22.15.30",
     "@types/sequelize": "^4.28.20",
-    "nodemon": "^3.1.10",
     "ts-node": "^10.9.2",
-    "tsx": "^4.19.4",
     "typescript": "^5.8.3"
   }
 }
